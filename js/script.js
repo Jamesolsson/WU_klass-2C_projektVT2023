@@ -5,3 +5,22 @@ function toggleMenu(){
 }
 
 document.getElementById('burger').addEventListener('click', toggleMenu) 
+
+function togglePicture(){
+
+    
+    document.getElementById('center_block').classList.toggle('center_block_change_color')
+  
+
+}
+
+document.getElementById('center_block').addEventListener('click', togglePicture) 
+
+function myFunction() {
+    element = document.getElementById("myDIV");
+    element.classList.toggle("mystyle");
+}
+
+document.getElementById('orange').addEventListener(onclick, myFunction)
+
+

@@ -5,41 +5,41 @@
 
 }
 
-body {
-    height: 100vh;
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+header{
+
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    
+    top: 0px;
+    background-color: rgb(18, 15, 59); 
+    
 
 }
 
-#background{
-    
-    background-image: url("/img/wallpaperflare.com_wallpaper.jpg");
-    
-  
-    height: 969px;
-  
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.header_tag{
+    width: 5px;
+    height: 5px;
+    color: white;
+    margin: 35px;
 }
 
 /* burger meny */
-
-
 #link_list a{
     text-decoration: none;
     letter-spacing: 0.1875rem;
     color: orange ;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.25rem;
     text-transform: uppercase;
-    margin-top: 10px;
     
 
 }
 
 #link_list{
-    background-color: rgb(71, 65, 65);
+   
     height: 500px;
     width: 200px;
     position: absolute;
@@ -48,16 +48,18 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    justify-content: space-around;
 
     list-style: none;
     transition: 1s;
+  
     
 }
 
 
 
 #burger div{
+    position: sticky;
     width: 25px;
     height: 3px;
     background-color: rgb(255, 255, 255);
@@ -69,11 +71,15 @@ body {
 }
 
 nav{
+    background-color: rgb(18, 15, 59); 
     display: flex;
+    position: sticky;
     justify-content: flex-end;
     align-items: center;
-    height: 100px;
     
+
+    
+    grid-area: na;
     
 }
 
@@ -85,9 +91,8 @@ nav{
 }
 
 .link_list_visible{
-    transform: translateY(600px);
+    transform: translateY(580px);
     
-    box-shadow: 10px 5px 5px rgb(0, 0, 0);
     
 
 }
@@ -106,16 +111,94 @@ nav{
     
 }
 
-header{
+/*burger meny end*/
 
-    color: whitesmoke;
-    display: flex;
-    padding: 30px;
-    justify-content: space-evenly;
-    border-top: rgb(255, 255, 255) solid 5px;
-    border-bottom: rgb(255, 255, 255) solid 5px; 
+
+
+
+
+
+#container_for_backgrounds {
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 900px 400px 900px 400px 900px;
+    grid-template-areas: 
+    "fb"
+    "smb"
+    "sb"
+    "fmb"
+    "tb"
+    
+    ;
+
     
 
 }
+
+#first_background{
+    
+    grid-area: fb;
+
+    background-color: rgb(18, 15, 59); 
+
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#secoend_background{
+
+    grid-area: sb;
+    background-color: rgb(1, 29, 10);
+    background-image: url("/img/vegetables-and-mushrooms-seamless-pattern-on-black-background-illustration-vector.jpg");
+    
+
+}
+
+#first_middle_background{
+
+
+    grid-area: fmb;
+    background-color: rgb(0, 0, 0);
+   
+
+}
+
+#third_background{
+
+    grid-area: tb;
+    background-color: rgb(0, 0, 0);
+    
+
+}
+
+#second_middle_background {
+
+    grid-area: smb;
+    background-color: rgb(255, 255, 255);
+    
+    background-image: url("/img/69e5b4a04aa27c60fc2467fe3168f839.jpg");
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
