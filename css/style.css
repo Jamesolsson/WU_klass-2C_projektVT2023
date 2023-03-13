@@ -5,20 +5,22 @@
 
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Merriweather:wght@300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Climate+Crisis&family=Gloria+Hallelujah&family=Merriweather:wght@300&display=swap');
 
 body{
 
-    background-color:rgb(25,41,88) ;
+    background-color: rgb(0, 39, 27);
 
 }
 
 header{
 
+    background-color: rgb(0, 39, 27);
     position: fixed;
     z-index: 2;
-    opacity: 0.0; 
+    
     width: 100%;
     height: 50px;
 
@@ -67,7 +69,7 @@ h1{
     top: -910px;
     z-index: 1.9;
 
-    background-color:rgb(25,41,88) ;
+    background-color: rgb(0, 39, 27);
     
     display: flex;
     flex-direction: column;
@@ -84,10 +86,12 @@ h1{
 
 
 #burger div{
-    position: sticky;
+    position: relative;
+
+    
     width: 25px;
     height: 3px;
-    background-color: blanchedalmond;
+    background-color: rgb(255, 255, 255);
     margin: 5px;
     border-radius: 25%;
     transition: 1s;
@@ -98,7 +102,7 @@ h1{
 nav{
     
     display: flex;
-    position: sticky;
+    position: fixed;
     justify-content: flex-end;
     align-items: center;
     z-index: 3;
@@ -147,10 +151,9 @@ nav{
 
 #container_for_backgrounds {
     height: 100vh;
-    margin: 0;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1000px 500px 1000px 500px 1000px;
+    grid-template-rows: 100% 80% 1000px 500px 1000px;
     grid-template-areas: 
     "fb"
     "fmb"
@@ -168,91 +171,65 @@ nav{
     
     grid-area: fb;
 
+    background-image: url(/img/wallpaperflare.com_wallpaper.jpg);
+
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    margin-bottom: 100px;
     
-
-
     color: rgb(255, 255, 255);
 
-
-    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-#first_background_picture{
-
-
-    overflow: hidden;
-    position: absolute;
-    top: 0px;
-    height: 130%;
-    width: 100%;
-    background-image: url(/img/italien_farm.jpg);
-    background-size: 800px;
-    background-position-y: -100px;
-    background-position-x: -100px;
-    filter: blur(3px);
-    -webkit-filter: blur(  px);
+#welcome{
+    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Merriweather', serif;
+    
+    position: relative;
+    font-size: 4rem;
+    
    
+    z-index: 1;
+    color: white;
+}
+
+#text_about_the_resturant{
+
+    font-family: 'Alfa Slab One', cursive;
+  
+
+    position: relative;
+    font-size: 20px;
+    
+    
+    z-index: 1;
+    color: rgb(255, 241, 215);
+
 
 }
 
-
-#boka_nu{
-
-    height: 60px;
-    width: 150px;
-    background-color: rgb(25,41,88);
-    z-index: 1;
-    border-radius: 30px;
-    box-shadow: 15px 15px 96px 3px rgba(0,0,0,0.82);
-    -webkit-box-shadow: 15px 15px 96px 3px rgba(0,0,0,0.82);
-    -moz-box-shadow: 15px 15px 96px 3px rgba(0,0,0,0.82);
+#first_middle_background{
+    background-image: url(/img/3791411.jpg);
+    z-index: 2;
+    grid-area: fmb;
     display: flex;
     align-items: center;
     justify-content: center;
     
     
-}
-
-
-
-
-
-
-#welcome{
-    font-family: 'Gloria Hallelujah', cursive;
     
-
-    font-size: 2rem;
-    padding: 0px;
    
-    z-index: 1;
-    color: blanchedalmond;
-
-
-}
-
-#text_about_the_resturant{
-    font-family: 'Silkscreen', cursive;
-    padding: 20px;
-    margin-top: 30px;
-    z-index: 1;
-    color: blanchedalmond;
-
 
 }
 
 #secoend_background{
-
+    
+    z-index: 2;
     grid-area: sb;
     background-color: rgb(1, 29, 10);
     
@@ -261,46 +238,13 @@ nav{
 }
 
 
-#first_middle_background{
 
-
-    grid-area: fmb;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: blanchedalmond;
-    
-    
-   
-
-}
-
-img{
-
- 
-    
-
-}
-
-
-#first_gallery_of_photos{
-
-    background-color: rgb(25,41,88);
-    width: 330px;
-    height: 410px;
-    margin: 10px;
-    
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    
-
-}
 
 
 
 #third_background{
 
+    z-index: 2;
     grid-area: tb;
     background-color: rgb(0, 0, 0);
     
@@ -309,9 +253,9 @@ img{
 
 #second_middle_background {
 
+    z-index: 2;
     grid-area: smb;
     background-color: rgb(255, 255, 255);
-    
     background-image: url("/img/vegetables-and-mushrooms-seamless-pattern-on-black-background-illustration-vector.jpg");
     
 
