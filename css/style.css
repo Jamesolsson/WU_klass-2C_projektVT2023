@@ -329,9 +329,14 @@ nav{
 }
 #holder_for_text_in_second_middle_background{
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100% 95% 55% 80% 1000px;
+    grid-template-areas: 
+    "li1 tte li2"
+    ". te ."
+    ". te ."
+    ;
     z-index: 2;
 
 }
@@ -340,7 +345,7 @@ nav{
     
     position: relative;
     
-    margin: 20px;
+    margin: 10px;
     font-size: 2rem;
 
 }
@@ -348,19 +353,20 @@ nav{
 .line_for_cocktailbar{
 
     background-color: white;
-    height: 5px;
-    width: 40px;
+    margin-top: 35px;
+    height: 3px;
+    width: 60px;
     border-radius: 5px;
 
 }
 #first_line{
 
-    margin: ;
+    grid-area: li1;
 
 }
 #second_line{
 
-    margin-left: px;
+    grid-area: li2;
 }
 
 #third_background{
@@ -368,8 +374,7 @@ nav{
     z-index: 2;
     grid-area: tb;
     
-    
-    
+ 
 
 }
 
