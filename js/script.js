@@ -16,11 +16,67 @@ function togglePicture(){
 
 document.getElementById('center_block').addEventListener('click', togglePicture) 
 
-function myFunction() {
-    element = document.getElementById("myDIV");
-    element.classList.toggle("mystyle");
+
+
+function myFunction1() {
+    var x = document.getElementById("menu_reavle");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+    
 }
 
-document.getElementById('orange').addEventListener(onclick, myFunction)
+function myFunction2() {
+    var x = document.getElementById("menu_reavle2");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+    
+}
+
+
+function myFunction3() {
+    var x = document.getElementById("menu_reavle3");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+    
+}
+
+function myFunction4() {
+    var x = document.getElementById("menu_reavle4");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+    
+}
+
+function myFunction5() {
+    var x = document.getElementById("menu_reavle5");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+    
+}
+
+function myFunction6() {
+    var x = document.getElementById("menu_reavle6");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+    
+}
 
 
