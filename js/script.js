@@ -18,65 +18,24 @@ document.getElementById('center_block').addEventListener('click', togglePicture)
 
 
 
-function myFunction1() {
-    var x = document.getElementById("menu_reavle");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-    
-}
-
-function myFunction2() {
-    var x = document.getElementById("menu_reavle2");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-    
+function toggleBox() {
+  var box = document.getElementById("dinner_box");
+  box.classList.toggle("visible");
 }
 
 
-function myFunction3() {
-    var x = document.getElementById("menu_reavle3");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-    
+function toggleBox1() {
+  var box = document.getElementById("lunch_box");
+  box.classList.toggle("visible");
 }
 
-function myFunction4() {
-    var x = document.getElementById("menu_reavle4");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-    
+function toggleBox2() {
+  var box = document.getElementById("breakfast_box");
+  box.classList.toggle("visible");
 }
 
-function myFunction5() {
-    var x = document.getElementById("menu_reavle5");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-    
-}
 
-function myFunction6() {
-    var x = document.getElementById("menu_reavle6");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-    
-}
+
+
 
 
