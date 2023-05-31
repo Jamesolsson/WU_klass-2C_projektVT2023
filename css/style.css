@@ -50,6 +50,8 @@ h1{
 /* burger meny */
 
 #link_list a{
+
+    display: flex;
     text-decoration: none;
     letter-spacing: 0.1875rem;
     color: orange ;
@@ -57,7 +59,7 @@ h1{
     font-size: 1.25rem;
     align-items: center;
     justify-content: center;
-    margin-left: 350px;
+ 
     text-transform: uppercase;
     z-index: 2;
     position: relative;
@@ -69,7 +71,7 @@ h1{
 #link_list{
    
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
     position: absolute;
     top: -101vh;
     z-index: 1.9;
@@ -106,17 +108,12 @@ h1{
 }
 
 nav{
-    
     display: flex;
-    position: fixed;
     justify-content: flex-end;
     align-items: center;
     z-index: 3;
-    position: fixed;
-    top: 0;
-    margin-left: 350px;
-    margin-top: 10px;
-    
+    margin-top: -90px;
+    position: s;
 
     
     grid-area: na;
@@ -133,10 +130,6 @@ nav{
 
 .link_list_visible{
     transform: translateY(101%);
-    
-    
-    
-
 }
 
 .burger_in_x_form #burger_line_1{
@@ -155,7 +148,7 @@ nav{
 
 .menu_visible{
 
-    transform: translateY(100px);
+    transform: translateY(100vw);
 
 }
 
@@ -177,7 +170,7 @@ nav{
 
 
 #container_for_backgrounds {
-    height: 100vh;
+    height: 99vh;
     
     display: grid;
     grid-template-columns: 1fr;
@@ -950,13 +943,6 @@ footer{
 
 }
 
-
-
-
-
-
-
-
 /* arbetare på Jamozoro*/
 
 #holder_for_workes_card_layout{
@@ -1007,7 +993,6 @@ footer{
     justify-content: center;
     flex-direction: column;
     font-size:1.7rem;
-    margin-bottom: ;
     text-align: center;
     padding: 5px;
 
@@ -1064,16 +1049,16 @@ footer{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 50px;
+ 
     background-image: url(/img/wallpaperflare.com_wallpaper.jpg);
-    height: 1000px;
+    height: 100vh;
 
 
 }
 
 #our_vision{
     
-    margin-bottom: 150px;
+    margin-bottom: 250px;
     font-size: 30px;
     z-index: 5;
     color: whitesmoke;
@@ -1081,23 +1066,33 @@ footer{
 }
 
 #picute_for_our_vision{
-    margin-top: -570px;
-    background-image: url(/img/matt-noble-BpTMNN9JSmQ-unsplash.jpg);
-    height: 500px;
+
+    background-color: orange;
+    height: 650px;
     width: 100vw;
-    background-position-x:-190px ;
+    background-size: cover;
+    background-position: center;
+    background-image: url(/img/matt-noble-BpTMNN9JSmQ-unsplash.jpg);
+
 
 }
 
 
 #text_in_our_vision{
-   
-
+    margin-top: 50px;
     color: rgb(255, 255, 255);
-
-    
     z-index: 2;
+    padding: 50px;
+}
 
+#headline_in_our_vision{
+
+    font-size: 30px;
+
+}
+
+#text_in_our_vision p{
+  margin-top: 20px;
 }
 
 #welcome_text_in_our_vision{
@@ -1492,13 +1487,15 @@ footer{
     }
 
     #picute_for_our_vision{
-
+        width: 900px;
+        height: 100vh;
         grid-area: op;
-
+  
     }
 
     #text_in_our_vision{
-
+        font-size: 30px;
+        padding: 100px;
         grid-area: ot;
 
     }
