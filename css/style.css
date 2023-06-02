@@ -6,15 +6,6 @@
     box-sizing: border-box;
 
 }
-
-
-
-body{
-
-
-
-}
-
 header{
 
     background-color: rgb(0, 39, 27);
@@ -74,7 +65,7 @@ h1{
     width: 100vw;
     position: absolute;
     top: -101vh;
-    z-index: 1.9;
+    z-index: 2;
 
     background-color: rgb(0, 39, 27);
     
@@ -112,10 +103,7 @@ nav{
     justify-content: flex-end;
     align-items: center;
     z-index: 3;
-    margin-top: -90px;
-    position: s;
-
-    
+    margin-top: -90px;  
     grid-area: na;
     
 }
@@ -621,6 +609,14 @@ footer{
 
 }
 
+#last_footer_section{
+
+    width: 455px;
+    height: 200px;
+    background-color: rgb(5, 41, 27);
+    background-image: url(/img/logotyp1.png);
+
+}
 
 #test{
 
@@ -1052,18 +1048,11 @@ footer{
  
     background-image: url(/img/wallpaperflare.com_wallpaper.jpg);
     height: 100vh;
+    background-position-x: 500px ;
 
 
 }
 
-#our_vision{
-    
-    margin-bottom: 250px;
-    font-size: 30px;
-    z-index: 5;
-    color: whitesmoke;
-
-}
 
 #picute_for_our_vision{
 
